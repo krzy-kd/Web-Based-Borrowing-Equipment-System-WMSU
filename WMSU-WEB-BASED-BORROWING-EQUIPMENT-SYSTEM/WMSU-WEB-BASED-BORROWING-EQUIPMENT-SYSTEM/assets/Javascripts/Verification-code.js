@@ -24,4 +24,7 @@ document.getElementById('otp-form').addEventListener('submit', (e) => {
     } else {
         alert("Please enter the full 6-digit code.");
     }
+
+    alert("Account successfully  Verified!");
+    window.location.href = "browse-page.html";
 });

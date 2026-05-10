@@ -1,39 +1,46 @@
 document.getElementById('ContactForms').addEventListener('submit', function(event) {
-    // 1. Get input values
     const mobileNum = document.getElementById('mobileNum').value.trim();
     const contactName = document.getElementById('contactName').value.trim();
     const emergeNum = document.getElementById('emergeNum').value.trim();
 
-    // 2. Regex Patterns
-    // Mobile: Must start with 09 and be followed by exactly 9 digits (total 11)
     const phonePattern = /^09\d{9}$/;
-    // Name: Should only contain letters and spaces (no numbers)
-    const namePattern = /^[a-zA-Z\s,.]+$/;
+    // Letters and spaces only (Dots and numbers are blocked)
+    const nameCharsPattern = /^[a-zA-Z\s]+$/;
 
-    // 3. Validation Checks
-    
-    // Check Mobile Number
+    // 1. Mobile Number Validation
     if (!phonePattern.test(mobileNum)) {
-        alert("Invalid Mobile Number! It must be 11 digits and start with '09'.");
-        event.preventDefault(); // Stop form from submitting
+        alert("Invalid Mobile Number! It must start with '09' and have 11 digits.");
+        event.preventDefault(); 
         return;
     }
 
-    // Check Emergency Contact Name (Prevent numbers)
-    if (!namePattern.test(contactName)) {
-        alert("Invalid Name! The contact name should not contain numbers.");
+    // 2. Character Validation (No dots/initials)
+    if (!nameCharsPattern.test(contactName)) {
+        alert("Invalid Name! Please enter the full names using letters only (no dots or initials).");
         event.preventDefault();
         return;
     }
 
-    // Check Emergency Contact Number
+    // 3. Name Part Validation
+    const nameParts = contactName.split(/\s+/).filter(part => part.length > 0);
+
+    if (nameParts.length < 3) {
+        // This handles "Lebron" (1 part) or "Lebron James" (2 parts)
+        event.preventDefault();
+        if (nameParts.length === 1) {
+            alert("Incomplete Name! Please include your Middle Name and Surname.");
+        } else {
+            alert("Missing Name Part! We need the First, Middle, and Surname. (e.g., Lebron James Arturo Micabalo)");
+        }
+        return;
+    }
+
+    // 4. Emergency Contact Number Validation
     if (!phonePattern.test(emergeNum)) {
-        alert("Invalid Emergency Contact Number! It must be 11 digits and start with '09'.");
+        alert("Invalid Emergency Number! It must start with '09' and have 11 digits.");
         event.preventDefault();
         return;
     }
 
-    // If everything passes, the form will proceed to Verification-code.html
-    window.location.href = "Verification-code.html";
-   
+    // Success - browser proceeds to Verification-code.html
 });
