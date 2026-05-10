@@ -20,7 +20,7 @@ document.getElementById('otp-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const code = Array.from(inputs).map(i => i.value).join('');
     if (code.length === 6) {
-        alert("Verifying code: " + code);
+        alert("Verified code: " + code);
     } else {
         alert("Please enter the full 6-digit code.");
     }

@@ -29,7 +29,7 @@ document.querySelectorAll('.toggle-password').forEach(icon => {
             this.textContent = "🔒"; 
         } else {
             input.type = "password";
-            this.textContent = "👁️";
+            this.textContent = "👁";
         }
     });
 });

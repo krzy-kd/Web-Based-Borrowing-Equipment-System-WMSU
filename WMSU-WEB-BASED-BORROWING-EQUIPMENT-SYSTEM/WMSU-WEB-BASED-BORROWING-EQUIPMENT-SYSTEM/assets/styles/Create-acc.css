@@ -2,6 +2,7 @@
     --primary-red: #7b1113;
     --bg-gray: #f2f2f2;
     --text-dark: #333;
+    --bg-white: #ffffff;
 }
 
 * {
@@ -135,8 +136,9 @@ body {
 }
 
 .footer a {
-    color: #3498db;
+    color: #0000FF;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .back-btn {
@@ -147,4 +149,8 @@ body {
     background: white;
     cursor: pointer;
     font-size: 1.2rem;
+    transition: 0.3s;
 }
+
+.back-btn:hover { background: var(--primary-red); color: var(--bg-white);}
+
