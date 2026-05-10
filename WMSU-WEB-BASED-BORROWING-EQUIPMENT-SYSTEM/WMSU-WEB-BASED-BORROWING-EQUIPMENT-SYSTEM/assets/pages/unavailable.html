@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Browse Items - University Borrowing</title>
-        <link rel="stylesheet" href="/assets/styles/browse-page.css">
+        <link rel="stylesheet" href="/assets/styles/unabalable.css">
     </head>
     <body>
 
@@ -53,14 +53,14 @@
                         <option value="">item</option>
                         <option value="Basketball-page.html">Basketball</option>    
                         <option value="football-page.html">Football</option>
-                        <option value="frisbee-page.html">Frisbee</option>
+                        <option value="freesbee-page.html">Frisbee</option>
                         <option value="Pickeball-page.html">Pickeball</option>
                         <option value="Sepak-page.html">Sepak Takraw</option>
                         <option value="volleyball-page.html">Volleyball</option>
                     </select>
 
-                    <select id="availability-filter">
-                        <option value="browse-page.html">Availability</option>
+                    <select id="availability-filter"><option value="">Availability</option>
+                        <option value="browse-page.html">Both</option>
                         <option value="available.html">Available</option>
                         <option value="unavailable.html">Unavailable</option>
                     </select>
@@ -100,7 +100,7 @@
                     <div class="item-info">
                         <h3>Sepak Ball</h3>
                         <p>Sports Equipment</p>
-                        <div class="status available"><span class="dot"></span> Available</div>
+                        <div class="status unavailable"><span class="dot"></span> Available</div>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
                     <div class="item-info">
                         <h3>Sepak Ball</h3>
                         <p>Sports Equipment</p>
-                        <div class="status available"><span class="dot"></span> Available</div>
+                        <div class="status unavailable"><span class="dot"></span> Available</div>
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                     <div class="item-info">
                         <h3>VolleyBall</h3>
                         <p>Sports Equipment</p>
-                        <div class="status available"><span class="dot"></span> Available</div>
+                        <div class="status unavailable"><span class="dot"></span> Available</div>
                     </div>
                 </div>
             </div>
@@ -246,6 +246,6 @@
         <div>
             <form action="#TopBar"><button id="toTop">▲</button></form>
         </div>
-        <script src="/assets/Javascripts/browse.js"></script>
+        <script src="/assets/Javascripts/availability.js"></script>
     </body>
     </html>
