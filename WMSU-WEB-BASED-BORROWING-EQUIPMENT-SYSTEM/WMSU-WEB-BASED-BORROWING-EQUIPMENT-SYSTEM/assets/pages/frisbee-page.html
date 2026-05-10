@@ -36,8 +36,8 @@
         <h1>BROWSE ITEMS</h1>
         <p>EXPLORE AVAILABLE EQUIPMENT AND RESOURCES THAT CAN BE BORROWED WITHIN THE UNIVERSITY.</p>
         
-        <div class="category-filters">
-            <form action=""><button class="filter-btn active" data-target="sports">🏀 SPORTS EQUIPMENT</button></form>
+        <div id="Actives" class="category-filters">
+            <form action="#Actives"><button class="filter-btn active" data-target="sports">🏀 SPORTS EQUIPMENT</button></form>
             <form action=""><button class="filter-btn" data-target="electronics">⛺ OTHERS</button></form>
             <form action="#help-section"><button class="filter-btn" data-target="Works">⛺ HOW IT WORKS?</button></form>
         </div>
@@ -59,11 +59,11 @@
                     <option value="volleyball-page.html">Volleyball</option>
                 </select>
 
-                <select>
-                    <option>Availability</option>
-                    <option value="">Unavailable</option>
+                <select id="availability-filter">
+                        <option value="browse-page.html">Availability</option>
+                        <option value="available.html">Available</option>
+                        <option value="unavailable.html">Unavailable</option>
                 </select>
-
             </div>
         </div>
 
@@ -246,5 +246,7 @@
         <form action="#TopBar"><button id="toTop">▲</button></form>
     </div>
     <script src="/assets/Javascripts/Sports-Equips.js"></script>
+    <script src="/assets/Javascripts/browse.js"></script>
+
 </body>
 </html>
