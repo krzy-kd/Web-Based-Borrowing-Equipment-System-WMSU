@@ -6,9 +6,8 @@ function swapImage(imagePath) {
     }
 }
 
-// Function to handle Favorite button toggle
 document.getElementById('fav-btn').addEventListener('click', function() {
-    const activeColor = 'rgb(255, 240, 240)'; // Light pink
+    const activeColor = 'rgb(255, 240, 240)'; 
     
     if (this.style.backgroundColor === activeColor) {
         this.style.backgroundColor = 'white';

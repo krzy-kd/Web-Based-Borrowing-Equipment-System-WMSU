@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (logoutBtn) {
         logoutBtn.addEventListener('click', function(event) {
-            // Prevent any form submission or page jumping
             event.preventDefault(); 
 
-            // 1. The Confirmation Popup (OK/Cancel)
             const confirmLogout = confirm("Are you sure you want to log out?");
 
 
@@ -25,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (cancelBtn) {
     cancelBtn.addEventListener('click', () => {
-        alert("log out cancelled")
+        alert("log out cancelled") 
         window.location.href = "user-profile.html";
     });
     }

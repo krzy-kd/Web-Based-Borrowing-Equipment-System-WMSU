@@ -42,7 +42,7 @@ body {
  max-height: 100px;
 }
 
-/* Search Bar Styling */
+/* Search Bar  */
 .search-wrapper {
     position: relative;
     display: flex;
@@ -211,31 +211,28 @@ body {
 .hero-images {
     flex: 1;
     display: flex;
-    gap: 15px; /* Space between columns */
-    height: 500px; /* Base height for the whole grid */
+    gap: 15px; 
+    height: 500px; 
 }
 
 .image-column {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between images in left column */
+    gap: 15px; 
     flex: 1;
 }
 
-/* Common box styling */
 .img-box { border-radius: 40px; overflow: hidden; }
 
-/* Logic for the Column with 2 Images */
 .small { flex: 1; }
 
-/* Logic for the Column with 1 Image */
 .tall { height: 100%; }
 
-/* Image behavior inside boxes */
+
 .hero-images img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This prevents stretching! */
+    object-fit: cover; 
     display: block;
 }
 
@@ -277,7 +274,7 @@ body {
 .feature-card {
     border: 1px solid #ddd;
     padding: 30px 20px;
-    border-radius: 40px; /* Large rounded corners from your UI */
+    border-radius: 40px; 
     transition: transform 0.3s ease;
 }
 
@@ -292,7 +289,7 @@ body {
     line-height: 1.4;
 }
 
-/* How It Works Lines */
+/* How It Works  */
 .title-with-lines {
     display: flex;
     align-items: center;
@@ -387,7 +384,7 @@ body {
     min-width: 200px;
 }
 
-/* Footer CTA */
+/* Footer */
 .footer-cta {
     padding: 80px 50px 0 50px;
     background-color: #fff;
@@ -432,7 +429,7 @@ body {
     position: relative;
 }
 
-/* The bracketed button style */
+
 .btn-requests {
     background: transparent;
     border: none;

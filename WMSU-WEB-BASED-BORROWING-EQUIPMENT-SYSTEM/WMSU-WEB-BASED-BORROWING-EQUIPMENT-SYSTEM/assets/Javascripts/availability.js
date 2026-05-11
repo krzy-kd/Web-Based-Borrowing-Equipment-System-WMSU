@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         availabilityFilter.addEventListener('change', navigate);
     }
 
-    // --- 3. SEARCH FILTER LOGIC ---
+    // 3. SEARCH FILTER LOGIC
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 4. CATEGORY BUTTONS ACTIVE TOGGLE ---
+    
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             filterButtons.forEach(b => b.classList.remove('active'));

@@ -2,14 +2,12 @@ const inputs = document.querySelectorAll('.otp-input');
 
 inputs.forEach((input, index) => {
     input.addEventListener('input', (e) => {
-        // Move to next input if value is entered
         if (e.target.value.length === 1 && index < inputs.length - 1) {
             inputs[index + 1].focus();
         }
     });
 
     input.addEventListener('keydown', (e) => {
-        // Move to previous input on backspace if current is empty
         if (e.key === 'Backspace' && e.target.value.length === 0 && index > 0) {
             inputs[index - 1].focus();
         }

@@ -19,7 +19,7 @@ body {
     color: var(--text-dark);
 }
 
-/* Logo Styling */
+/* Logo  */
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +39,7 @@ body {
  max-height: 100px;
 }
 
-/* Search Bar Styling */
+/* Search Bar S */
 .search-wrapper {
     position: relative;
     display: flex;
@@ -191,7 +191,6 @@ body {
 
 .btn-browse:hover { scale: 1.1; }
 
-/* The bracketed button style */
 .btn-requests {
     background: transparent;
     border: none;
@@ -251,7 +250,7 @@ body {
     gap: 30px;
 }
 
-/* Card Styling */
+/* Cards */
 .item-card {
     border: 1px solid #eee;
     border-radius: 5px;
@@ -365,7 +364,7 @@ body {
     line-height: 1.4;
 }
 
-/* How It Works Lines */
+/* How It Works */
 .title-with-lines {
     display: flex;
     align-items: center;
@@ -460,7 +459,7 @@ body {
     min-width: 200px;
 }
 
-/* Footer CTA */
+/* Footer */
 .footer-cta {
     padding: 80px 50px 0 50px;
     background-color: #fff;
@@ -505,7 +504,6 @@ body {
     position: relative;
 }
 
-/* The bracketed button style */
 .btn-requests {
     background: transparent;
     border: none;

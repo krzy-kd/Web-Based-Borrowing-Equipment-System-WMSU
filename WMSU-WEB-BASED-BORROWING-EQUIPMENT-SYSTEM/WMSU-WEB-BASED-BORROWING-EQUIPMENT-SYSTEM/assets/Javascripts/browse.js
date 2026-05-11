@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. SELECT ELEMENTS
+    
     const itemDropdown = document.getElementById('item-dropdown');
     const availabilityFilter = document.getElementById('availability-filter');
     const searchInput = document.getElementById('searchInput');
     const itemCards = document.querySelectorAll('.item-card');
     const filterButtons = document.querySelectorAll('.filter-btn');
 
-    // --- 2. DROPDOWN NAVIGATION (Works for both Item and Availability) ---
-    // We use a shared function to handle the redirection
+    
     const navigate = (event) => {
         const url = event.target.value;
         if (url && url.trim() !== "") {
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         availabilityFilter.addEventListener('change', navigate);
     }
 
-    // --- 3. SEARCH FILTER LOGIC ---
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
@@ -36,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 4. CATEGORY BUTTONS ACTIVE TOGGLE ---
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             filterButtons.forEach(b => b.classList.remove('active'));
