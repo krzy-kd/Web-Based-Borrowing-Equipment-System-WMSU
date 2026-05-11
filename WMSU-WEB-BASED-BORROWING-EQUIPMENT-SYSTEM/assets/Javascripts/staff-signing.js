@@ -58,7 +58,7 @@ registrationForm.addEventListener('submit', function(e) {
 
     const idPattern = /^\d{8,100}$/; 
     if (!idPattern.test(idValue)) {
-        alert("Invalid ID Number! It must be betwee 9 digits  or more (Example: 202502829).");
+        alert("Invalid ID Number! It must be 9 digits or more(Example: 202502829).");
         return;
     }
 
@@ -84,6 +84,6 @@ registrationForm.addEventListener('submit', function(e) {
         alert("You may proceed, Goodluck")
     }
 
-    window.location.href = "Signing-page.html";
+    window.location.href = "sign-for-staff.html";
 });
 

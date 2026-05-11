@@ -53,7 +53,7 @@ body {
 
 /* Right Form Section */
 .form-section {
-    position: relative; /* Essential for absolute logo */
+    position: relative;
     flex: 1;
     padding: 40px 80px;
     display: flex;

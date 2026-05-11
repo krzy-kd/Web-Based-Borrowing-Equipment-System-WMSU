@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemCards = document.querySelectorAll('.item-card');
     const itemDropdown = document.getElementById('item-dropdown'); // Target the dropdown
 
-    // --- 1. Dropdown Navigation Logic ---
     if (itemDropdown) {
         itemDropdown.addEventListener('change', function() {
             const destination = this.value;
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. Simple Search Filter ---
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 3. Category Buttons Active Toggle ---
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
